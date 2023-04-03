@@ -12,12 +12,12 @@
             font-weight: normal;
             font-style: normal;
         }
+        body {
+            background-color: rgb(255, 255, 255);
+        }
         * {
             margin: 0px;
             padding: 0px;
-        }
-        body {
-            background-color: rgb(255, 255, 255);
         }
         header {
             background-color: rgba(192, 166, 19, 0.829);    
@@ -26,7 +26,7 @@
             box-shadow: 1px 2px 10px black;
             text-align: center;
         }
-        h1#titulodosite {
+        #titulodosite {
             font-family: 'fontcordel';
             letter-spacing: 10px;
             font-size: 120px;
@@ -50,22 +50,40 @@
         header > p > a:hover {
         color: rgb(86, 76, 230);
         }
-        main#main1 > p {
+        #main1 > p {
             font-family: Arial, Helvetica, sans-serif;
-            font-size: 35px;
-            letter-spacing: 2px;
-            margin-top: 50px;
+            font-size: 30px;
+            letter-spacing: 1px;
+            margin-top: 25px;
             margin-right: 500px;
-            margin-left: 30px;
-            line-height: 90px;
+            margin-left: 20px;
+            line-height: 100px;
         }
         #section1 {
             background-color: gray;
-            height: 400px;
             background-image: url(background001.jpg);
             background-position: center center;
-
+            background-size: 200vh;
+            padding-top: 30px;
+            padding-bottom: 30px;    
         }
+        #blocodopoema {
+            background-color: rgba(0, 0, 0, 0.534);
+            height: 600px;
+            width: 500px;
+            margin-left: 30px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        article > p  {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 40px;
+            line-height: 80px;
+            color:aliceblue;
+            letter-spacing: 1px;
+        }
+        
+        
         
     </style>
 </head>
@@ -74,6 +92,7 @@
     <h1 id="titulodosite">CORDEL MODERNO!</h1>
     <p>Por <a href="https://www.recantodasletras.com.br/poesias/3186743" target="_blank" rel="noopener noreferrer">Milton Duarte</a></p>
     </header>
+    <br>
     <main id="main1">
     <p>
     Estou ficando cansado
@@ -84,10 +103,16 @@
     Antes que eu caduque
     Vou dizer tudo em poesia.
     </p>
+    </main>
     <br>
     <section id="section1">
+    <div id="blocodopoema">
+    <article>
+    <p>Não é mais como era antes É tudo abreviado "Você" só tem duas letras O "O" e o "E" foi riscado Para declarar o amor Basta botar uma flor E um coração desenhado.</p>
+    </article>
+    </div> 
     </section>
-    </main>
+    
     
 </body>
 </html>
