@@ -13,6 +13,17 @@
         h1 {
             text-align: center;
         }
+        caption {
+            background-color: rgb(99, 197, 90);
+            padding: 10px;
+            box-shadow: 1px 1px 10px black;
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: normal;
+            font-weight: bolder;
+            font-size: 25px;
+
+
+        }
         table {
             width: 500px;
             margin: auto;
@@ -28,37 +39,40 @@
         thead, tfoot {
             background-color: gray;
             color: white;
-            
+        }
+        tbody > tr:nth-child(1n) {
+            background-color: aquamarine;
         }
     </style>
 </head>
 <body>
 <h1>Exercício de tabelas!</h1>
     <table>
+        <caption>TABELAS EM HTML!</caption>
     <thead>
         <tr>
-            <th>Estado</th>
-            <th>População</th>
+            <th scope="col">Estado</th>
+            <th scope="col">População</th>
         </tr>
     </thead>
     <tbody>
         <tr>
             <td>São Paulo</td>
-            <td>380.009</td>
+            <td scope="num">380.009</td>
         </tr>
         <tr>
             <td>Bahia</td>
-            <td>321.000</td>
+            <td scope="num">321.000</td>
         </tr>
         <tr>
             <td>Minas Gerais</td>
-            <td>100.000</td>
+            <td scope="num">100.000</td>
         </tr>
     </tbody>
     <tfoot>
         <tr>
-            <th>Total de Habitantes</th>
-            <td>801.009</td>
+            <th scope="row">Total de Habitantes</th>
+            <td scope="num">801.009</td>
         </tr>
     </tfoot>
     </table>
